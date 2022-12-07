@@ -1,0 +1,130 @@
+.header {
+    display: block;
+    max-width: 100%;
+    max-height: 40px;
+    padding: 20px 10px;
+    margin: -12px auto;
+    margin-bottom:50px;
+    color:#ffffff;
+    background-color: #131318;
+    /*background:linear-gradient(#1D2430FF,#13131811);*/
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .header .title {
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 12px;
+    margin-left: 12px;
+    line-height: normal;
+  }
+
+  .header .menu {
+    margin-top: 12px;
+    clear: both;
+    max-height: 0;
+    font-size:18px;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 22px 22px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 370px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  @media (min-width: 1000px) {
+    
+    .header li {
+      float: left;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header .menu {
+      max-height: none;
+    }
+
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  

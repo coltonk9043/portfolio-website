@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  color:white;
+}
+
+h2{
+  color:white;
+}
+
+h3{
+  color:rgb(151, 151, 151);
+}
+
+h4{
+  color:rgb(151, 151, 151);
+  margin:auto;
+  margin-top:10px;
+  font-size:16px;
+}
+
+body{
+  height:100%;
+  min-height: 100%;
+  max-height:100%;
+  text-align: center;
+}
+
+.header_body{
+  text-align: center;
+  font-size:50px;
+  font-weight: bold;
+}
+
+.button {
+  margin: 2px 5px 20px 10px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.button:hover {
+  box-shadow: 0 2px 10px #2ab0ee;
+  background-color: #2ab0ee;
+  color: #ffffff !important;
+}
+
+.button_static{
+  background-color: #3a4e57;
+  margin: 6px 5px 20px 20px;
+  padding:10px 50px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.button_static:hover {
+  box-shadow: 0 2px 10px #2ab0ee;
+  background-color: #2ab0ee;
+  color: #ffffff !important;
+}
+
+.main_container{
+  width:950px;
+  margin:auto;
+}
+
+@media (min-width: 450px) {
+  .main_container{
+      width:350px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main_container{
+      width:700px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .main_container{
+      width:1050px;
+  }
+}
