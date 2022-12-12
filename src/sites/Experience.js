@@ -18,21 +18,13 @@ const Experience = () => {
 
   const renderExperience = () => {
     let experience = [];
-    if(experiences.length == 0){
+    for (let i = 0; i < experiences.length; i++) {
+      const exp = experiences[i];
       experience.push(
-        <div>
-          <h3>Currently no professional experience. :(</h3>
-          <h4>But you could change that!</h4>
-        </div>
+          <ExperienceCard name={exp.title} description={exp.description}/>
       );
-    }else{
-      for (let i = 0; i < experiences.length; i++) {
-        const exp = experiences[i];
-        experience.push(
-            <ExperienceCard name={exp.title} description={exp.description}/>
-        );
-      }
     }
+    
     return experience;
   };
 

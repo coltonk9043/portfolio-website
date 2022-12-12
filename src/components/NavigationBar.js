@@ -7,9 +7,10 @@ function NavBar() {
         <header className="header">
           <label className="title">CK</label>
           
-          <label className="menu-icon" htmlFor="menu-btn">
+          <label className="menu-icon">
             <span className="navicon"></span>
           </label>
+
           <ul className="menu">
             <li>
               <NavLink

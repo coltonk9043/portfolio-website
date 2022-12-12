@@ -13,17 +13,17 @@ function App() {
   return (
     <body>
       <Router>
-      <NavBar />
-      <Routes>
-          <Route path="/" element={<Projects to="/projects" />} />
+        <NavBar />
+        <Routes>
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/experience" element={<Experience />} />
           <Route exact path="/3dprinting" element={<Printing />} />
+          <Route path="/" element={<Projects />} />
+          <Route path="*" element={<Projects />} />
         </Routes>
       </Router>
       <Footer />
     </body>
-    
   );
 }
 

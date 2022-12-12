@@ -11,6 +11,7 @@ const Banner = () => {
         <div className="right_anchor">
             <img src="portait.png" className="banner_img"></img>
         </div>
+        <br />
         <div className="social_media">
             <a href="https://github.com/coltonk9043" target="_blank" rel="noopener noreferrer" className="socialLink"><img src="github.png" className="social_media_img"></img></a>
             <a href="https://www.linkedin.com/in/colton-kennedy-219b921b7/" target="_blank" rel="noopener noreferrer" className="socialLink"><img src="linkedin.png" className="social_media_img"></img></a>
