@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner_body">
         <div className="left_anchor">
-            <h1 >Hi, I'm Colton</h1>
+            <h1 >Hi, I'm Colton Kennedy</h1>
             <h3>3D printing enthusiast, video game lover, computer programmer, and developer from Sarnia, Ontario. </h3>
         </div>
         <div className="right_anchor">
