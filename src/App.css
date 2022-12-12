@@ -62,26 +62,6 @@ body{
   margin:auto;
 }
 
-/*iPhone XS*/
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-    .main_container{
-        width:375px;
-    }
-}
-
-/*iPhone XS Max*/
-@media only screen 
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 3) {
-    .main_container{
-        width:414px;
-    }
-}
-
 /*Desktop*/
 @media (min-width: 450px) {
   .main_container{
