@@ -7,19 +7,18 @@ import Projects from "./sites/Projects";
 import Experience from "./sites/Experience";
 import Printing from "./sites/Printing";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <body>
-      <Router>
+      <Router forceRefresh={true}>
         <NavBar />
         <Routes>
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/experience" element={<Experience />} />
           <Route exact path="/3dprinting" element={<Printing />} />
           <Route path="/" element={<Projects />} />
-          <Route path="*" element={<Projects />} />
         </Routes>
       </Router>
       <Footer />

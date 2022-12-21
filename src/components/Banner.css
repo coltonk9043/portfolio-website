@@ -16,7 +16,8 @@
 
 .banner_img{
     max-width: 300px;
-    max-height: 400px;
+    max-height: 425px;
+    border-radius: 10px;
 }
 
 .left_anchor{
